@@ -10,4 +10,5 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'cart', component: CartComponent },
     { path: 'dashboard', component: AdminDashboardComponent },
+    { path: 'success', loadComponent: () => import('./components/payment-success/payment-success.component').then(m => m.PaymentSuccessComponent) },
 ];

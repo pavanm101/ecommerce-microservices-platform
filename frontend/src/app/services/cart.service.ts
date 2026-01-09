@@ -40,8 +40,20 @@ export class CartService {
     });
   }
 
-  checkout(orderData: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/checkout`, orderData);
+  checkout(orderData: any) {
+    const items = this.cartSubject.value.map(item => ({
+      name: item.product.name,
+      price: item.price,
+      quantity: item.quantity,
+      productId: item.product.id
+    }));
+
+    return this.http.post<any>('/api/payment/checkout', { items, orderId: Date.now() })
+      .subscribe(res => {
+        if (res.paymentUrl) {
+          window.location.href = res.paymentUrl;
+        }
+      });
   }
 
   getCartTotal(): number {

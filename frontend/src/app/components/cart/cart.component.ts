@@ -46,7 +46,7 @@ import { RouterModule } from '@angular/router';
             <span>Total</span>
             <span>\${{cartService.getCartTotal()}}</span>
           </div>
-          <button class="btn-checkout">Proceed to Checkout</button>
+          <button (click)="checkout()" class="btn-checkout">Proceed to Checkout</button>
         </div>
       </div>
     </div>
@@ -196,5 +196,9 @@ export class CartComponent {
 
   removeItem(productId: number) {
     this.cartService.removeFromCart(productId);
+  }
+
+  checkout() {
+    this.cartService.checkout({});
   }
 }
