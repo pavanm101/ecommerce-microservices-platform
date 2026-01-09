@@ -1,0 +1,51 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.pavan.ecommerce:ecommerce-starter >----------------
+[INFO] Building ecommerce-starter 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ecommerce-starter ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ ecommerce-starter ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 54 source files with javac [debug release 17] to target\classes
+[INFO] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/cache/RedisCache.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/cache/RedisCache.java: Recompile with -Xlint:unchecked for details.
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[49,33] incompatible types: co.elastic.clients.elasticsearch._types.aggregations.AggregationRange is not a functional interface
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[84,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[90,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[96,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[102,58] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[110,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[124,61] incompatible types: java.lang.String cannot be converted to int
+[INFO] 7 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.764 s
+[INFO] Finished at: 2026-01-09T16:15:01+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project ecommerce-starter: Compilation failure: Compilation failure: 
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[49,33] incompatible types: co.elastic.clients.elasticsearch._types.aggregations.AggregationRange is not a functional interface
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[84,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[90,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[96,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[102,58] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[110,59] incompatible types: java.lang.String cannot be converted to int
+[ERROR] /C:/workspace/Spring-project/src/main/java/com/pavan/ecommerce/analytics/AnalyticsService.java:[124,61] incompatible types: java.lang.String cannot be converted to int
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
